@@ -25,7 +25,7 @@
     //添加按钮(左抽屉）
     UIButton *slideBtu = [UIButton buttonWithType:UIButtonTypeCustom];
     slideBtu.frame = CGRectMake(40, 150, 100, 35);
-    [slideBtu setTitle:@"侧拉栏(右)" forState:UIControlStateNormal];
+    [slideBtu setTitle:@"侧拉栏(左)" forState:UIControlStateNormal];
     [slideBtu addTarget:self action:@selector(didSlideBtu:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:slideBtu];
     
