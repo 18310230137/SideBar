@@ -15,6 +15,10 @@
 		93F0955F1DB5E92000E6DB5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F0955D1DB5E92000E6DB5B /* LaunchScreen.storyboard */; };
 		93F0956A1DB5E92000E6DB5B /* SideBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F095691DB5E92000E6DB5B /* SideBarTests.m */; };
 		93F095751DB5E92000E6DB5B /* SideBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F095741DB5E92000E6DB5B /* SideBarUITests.m */; };
+		93F095841DB5EC7A00E6DB5B /* YRSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F095831DB5EC7A00E6DB5B /* YRSideViewController.m */; };
+		93F095871DB5F1A000E6DB5B /* DrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F095861DB5F1A000E6DB5B /* DrawerViewController.m */; };
+		93F095891DB5F21C00E6DB5B /* 万佳生活ios侧拉-背景@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93F095881DB5F21C00E6DB5B /* 万佳生活ios侧拉-背景@2x.jpg */; };
+		93F0958C1DB5F7BA00E6DB5B /* RightDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F0958B1DB5F7BA00E6DB5B /* RightDrawerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		93F095701DB5E92000E6DB5B /* SideBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F095741DB5E92000E6DB5B /* SideBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SideBarUITests.m; sourceTree = "<group>"; };
 		93F095761DB5E92000E6DB5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93F095821DB5EC7A00E6DB5B /* YRSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSideViewController.h; sourceTree = "<group>"; };
+		93F095831DB5EC7A00E6DB5B /* YRSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSideViewController.m; sourceTree = "<group>"; };
+		93F095851DB5F1A000E6DB5B /* DrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerViewController.h; sourceTree = "<group>"; };
+		93F095861DB5F1A000E6DB5B /* DrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerViewController.m; sourceTree = "<group>"; };
+		93F095881DB5F21C00E6DB5B /* 万佳生活ios侧拉-背景@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "万佳生活ios侧拉-背景@2x.jpg"; sourceTree = "<group>"; };
+		93F0958A1DB5F7BA00E6DB5B /* RightDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightDrawerViewController.h; sourceTree = "<group>"; };
+		93F0958B1DB5F7BA00E6DB5B /* RightDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightDrawerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +116,17 @@
 				93F095531DB5E92000E6DB5B /* AppDelegate.m */,
 				93F095551DB5E92000E6DB5B /* ViewController.h */,
 				93F095561DB5E92000E6DB5B /* ViewController.m */,
+				93F095851DB5F1A000E6DB5B /* DrawerViewController.h */,
+				93F095861DB5F1A000E6DB5B /* DrawerViewController.m */,
+				93F0958A1DB5F7BA00E6DB5B /* RightDrawerViewController.h */,
+				93F0958B1DB5F7BA00E6DB5B /* RightDrawerViewController.m */,
 				93F095581DB5E92000E6DB5B /* Main.storyboard */,
 				93F0955B1DB5E92000E6DB5B /* Assets.xcassets */,
+				93F095881DB5F21C00E6DB5B /* 万佳生活ios侧拉-背景@2x.jpg */,
 				93F0955D1DB5E92000E6DB5B /* LaunchScreen.storyboard */,
 				93F095601DB5E92000E6DB5B /* Info.plist */,
+				93F095821DB5EC7A00E6DB5B /* YRSideViewController.h */,
+				93F095831DB5EC7A00E6DB5B /* YRSideViewController.m */,
 				93F0954F1DB5E92000E6DB5B /* Supporting Files */,
 			);
 			path = SideBar;
@@ -249,6 +267,7 @@
 				93F0955F1DB5E92000E6DB5B /* LaunchScreen.storyboard in Resources */,
 				93F0955C1DB5E92000E6DB5B /* Assets.xcassets in Resources */,
 				93F0955A1DB5E92000E6DB5B /* Main.storyboard in Resources */,
+				93F095891DB5F21C00E6DB5B /* 万佳生活ios侧拉-背景@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +292,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F095841DB5EC7A00E6DB5B /* YRSideViewController.m in Sources */,
 				93F095571DB5E92000E6DB5B /* ViewController.m in Sources */,
 				93F095541DB5E92000E6DB5B /* AppDelegate.m in Sources */,
+				93F095871DB5F1A000E6DB5B /* DrawerViewController.m in Sources */,
+				93F0958C1DB5F7BA00E6DB5B /* RightDrawerViewController.m in Sources */,
 				93F095511DB5E92000E6DB5B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +450,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bqhz.SideBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -439,6 +462,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bqhz.SideBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

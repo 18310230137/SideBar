@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "DrawerViewController.h"
+#import "RightDrawerViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    DrawerViewController *drawerVC = [[DrawerViewController alloc] init];
+    RightDrawerViewController *rightVC = [[RightDrawerViewController alloc] init];
+    ViewController *VC = [[ViewController alloc] init];
+    _sideViewController = [[YRSideViewController alloc] init];
+    _sideViewController.rootViewController = VC;
+    _sideViewController.leftViewController = drawerVC;
+    _sideViewController.rightViewController = rightVC;
+    
+    
+    _sideViewController.leftViewShowWidth = [UIScreen mainScreen].bounds.size.width - 80;
+    _sideViewController.rightViewShowWidth = [UIScreen mainScreen].bounds.size.width - 80;
+    _sideViewController.needSwipeShowMenu = NO; // 是否根据滑动手势展开
+   
+    self.window.rootViewController = _sideViewController;
+
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
